@@ -1,0 +1,91 @@
+{
+  "name": "CRM Survey",
+  "pages": [
+    {
+      "name": "Personal",
+      "rows": [
+         {
+           "title": "ข้อมูลทั่วไป",
+           "type": "doubleTextField",
+           "typeId": 2,
+           "content": {
+             "fields": ["ชื่อจริง", "นามสกุล"]
+           },
+           "isRequired": true
+         },
+         {
+           "title": "",
+           "type": "radioButton",
+           "typeId": 3,
+           "content": {
+             "choices": ["ชาย", "หญิง"]
+           },
+           "isRequired": true
+
+         },
+         {
+           "title": "อายุ",
+           "type": "dropdown",
+           "typeId": 5,
+           "content": {
+                "header": "เลือกอายุ",
+                "choices": ["18", "19", "20"]
+           },
+           "isRequired": true
+         }
+      ]
+    },
+    {
+      "name": "Education",
+      "rows": [
+         {
+           "title": "",
+           "type": "radioButton",
+           "typeId": 3,
+           "content": {
+             "choices": ["มัธยมปลาย", "ปริญญาตรี", "ปริญญาโท", "ปริญญาเอก"]
+           },
+           "isRequired": true
+         }
+      ]
+    },
+    {
+      "name": "Job",
+      "rows": [
+         {
+           "title": "",
+           "type": "checkbox",
+           "typeId": 4,
+           "content": {
+             "choices": ["กราฟฟิกดีไซน์", "สถาปัตยกรรม", "แฟชั่นและสิ่งทอ", "ออกแบบตกแต่งภายใน"]
+           },
+           "isRequired": true
+         }
+      ]
+    },
+    {
+      "name": "Time",
+      "rows": [
+         {
+           "title": "ช่วงเวลาที่เริ่มใช้บริการ",
+           "type": "slider",
+           "typeId": 6,
+           "content": {
+             "min": 9,
+             "max": 21
+           },
+           "isRequired": true
+         },
+         {
+           "title": "ระยะเวลาที่ใช้บริการ",
+           "type": "slider",
+           "content": {
+             "min": 1,
+             "max": 12
+           },
+           "isRequired": true
+         }
+      ]
+    }
+  ]
+}
